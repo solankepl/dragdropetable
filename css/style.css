@@ -1,0 +1,108 @@
+
+.navbar{
+ margin-bottom: 0px;    
+}
+
+.navbar-inverse {
+  background-color:#2A80B9;
+  border-color:#2A80B9;    
+   color: #FFF;     
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color:#FFAE02;
+    color:#000;    
+}
+
+header{
+   background-color: #F6F6F6; 
+   border-bottom: 2px rgba(153, 153, 153, 0.19) solid;
+}
+
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #FFF;   
+}
+
+.logo-img {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #FFF;
+    font-size: 24px;
+    font-family: serif;    
+}
+
+.welcomeTxt{
+    font-size: 12px;   
+}
+
+.username{
+   margin:10px 10px -15px 10px;    
+}
+
+.thumb-img{
+    margin-top: 5px;   
+}
+
+.sub-heder{
+    background-color:#F6F6F6;   
+}
+
+.btn-default {
+    padding: 4px 30px;
+    background-color: #999999;
+    border-radius: 0px;
+    margin: 10px 5px;  
+    color: #fff;
+}
+
+.btn-default.active{
+   background-color: #FFAE02;  
+   color: #000;    
+}
+
+.sub-heder .navbar-nav>li>a{
+   padding: 4px 30px; 
+}
+    
+.screen-title{
+  background-color: #000;
+  color: #FFF;    
+  text-align: center;      
+}
+
+.thumb-image-container{
+    text-align: center;
+}
+
+.main-container {
+  margin:10px 0px;   
+}
+.gray-bg {
+    background-color:#999999; 
+}
+
+.blueFlatBtn{
+    margin: 5px auto;
+    padding: 5px 30px;
+    border-radius: 0px; 
+}
+
+footer {
+ background-color: #2D3E50;   
+ color: #808992;   
+ height: 50px;  
+}
+
+footer .pad-lft {
+  text-align:left;   
+  margin-top: 15px;      
+}
+
+
+
+
+
