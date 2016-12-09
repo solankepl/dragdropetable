@@ -1,107 +1,1023 @@
-
-.navbar{
- margin-bottom: 0px;    
+body {
+    font-family: Arial, Helvetica, sans-serif;   
+    margin: auto;
 }
 
-.navbar-inverse {
-  background-color:#2A80B9;
-  border-color:#2A80B9;    
-   color: #FFF;     
+.clear-fix{
+  clear:both;   
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-    background-color:#FFAE02;
-    color:#000;    
+.disableimg {
+  opacity: 0.5   
 }
 
-header{
-   background-color: #F6F6F6; 
-   border-bottom: 2px rgba(153, 153, 153, 0.19) solid;
+ul, li{
+    list-style: none;
+    padding: 2px 0px;
 }
 
-
-.navbar-inverse .navbar-nav>li>a{
-    color: #FFF;   
+a{
+    color: #015BA7;   
 }
 
-.logo-img {
-    margin-top: 10px;
-    margin-right: 10px;
+.color-blue {
+    color: #015BA7;   
 }
 
-.navbar-inverse .navbar-brand{
-    color: #FFF;
-    font-size: 24px;
-    font-family: serif;    
+.color-gray{
+     color:#333333;   
 }
 
-.welcomeTxt{
-    font-size: 12px;   
+.color-Coral{
+    color: #C36121;   
 }
 
-.username{
-   margin:10px 10px -15px 10px;    
+.pull-left {
+  float: left;   
 }
 
-.thumb-img{
-    margin-top: 5px;   
+.pull-right {
+  float: right;   
 }
 
-.sub-heder{
-    background-color:#F6F6F6;   
+select, input{
+    font-size: 12px; 
+    height: 19px;    
 }
 
-.btn-default {
-    padding: 4px 30px;
-    background-color: #999999;
-    border-radius: 0px;
-    margin: 10px 5px;  
-    color: #fff;
+.plan-of-care-container{
+    padding: 0px 10px; 
+    min-width: 980px;   
+    max-width: 1440px;   
 }
 
-.btn-default.active{
-   background-color: #FFAE02;  
-   color: #000;    
-}
-
-.sub-heder .navbar-nav>li>a{
-   padding: 4px 30px; 
-}
-    
-.screen-title{
-  background-color: #000;
-  color: #FFF;    
-  text-align: center;      
-}
-
-.thumb-image-container{
+.plan-of-care-container .fix-header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: #FFF;
+    z-index: 999;
     text-align: center;
 }
 
-.main-container {
-  margin:10px 0px;   
-}
-.gray-bg {
-    background-color:#999999; 
+.plan-of-care-container .fix-header .btn-group{
+    display: inline-block;   
 }
 
-.blueFlatBtn{
-    margin: 5px auto;
-    padding: 5px 30px;
-    border-radius: 0px; 
+.plan-of-care-container .title-of-module {  
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #666666; 
+    float: left;
+    padding: 10px 0px;
 }
 
-footer {
- background-color: #2D3E50;   
- color: #808992;   
- height: 50px;  
+.plan-of-care-container .header-btn {   
+    padding: 8px 15px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    font-size: 11px;
+    font-family: inherit;
+    margin-top: 8px;
+    background: #FFF;
+    cursor: pointer;
+    color:#333333;   
 }
 
-footer .pad-lft {
-  text-align:left;   
-  margin-top: 15px;      
+.finalize-btn.header-btn{
+    margin-right: 25px;
+    -webkit-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 7px -1px rgba(0,0,0,0.75);   
 }
 
+.plan-of-care-container .sub-heading {   
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;   
+    padding: 50px 0px 5px 0px;
+}
+
+.plan-of-care-container .problem-txt{
+    float: left;
+    padding: 7px; 
+    font-weight: 700;    
+    font-size: 14px;   
+}
+
+.plan-of-care-container .problems-btn-group {
+    border: 1px solid #CCC; 
+}
+
+.plan-of-care-container .problems-btn-group ul, .plan-of-care-container .add-Goal-btn-group ul{
+   padding:6px 0px;
+}
+
+.plan-of-care-container .problems-btn-group ul li, .plan-of-care-container .add-Goal-btn-group ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 11px;
+    border-right: 1px solid;
+    color: #015BA7;
+    text-decoration: underline;
+    cursor: pointer;
+    line-height: 6px;
+}
+
+.plan-of-care-container .problems-btn-group ul li:last-child, .plan-of-care-container .add-Goal-btn-group ul li:last-child {
+   border-right: none; 
+}
+
+.plan-of-care-container .problems-btn-group ul .active, .plan-of-care-container .add-Goal-btn-group ul .active {
+     color:#000;
+     text-decoration: none;
+}
+
+
+.plan-of-care-container .add-Goal-btn-group {
+    margin:8px 0px;
+}
+
+.plan-of-care-container .add-Goal-btn-group .new-goal-btn {
+    background: #F3F3F3 url('../images/plus-icon.png') no-repeat top left;
+    padding: 5px 7px 5px 25px;
+    background-position: 5px;
+    font-family: inherit;
+    font-size: 11px; 
+    border: 1px solid #CCC;
+    color: #333333;
+    float:left;
+    margin-right: 5px;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+.plan-of-care-container .add-Goal-btn-group ul {
+    padding: 0px;
+}
+
+.plan-of-care-container .grid-Component{
+   margin: 20px 0px 30px 0px;        
+   min-height: 117px;
+}
+
+.plan-of-care-container .grid-Component .ui-state-disabled{
+    opacity: 0.3;
+}
+
+.grid-Component .in-focus-gride {
+    width: 100%;
+}
+
+.grid-Component .in-focus-gride thead {
+    line-height: 8px;      
+}
+
+.grid-Component .in-focus-gride thead th{
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 7px 0px;
+}
+
+
+.grid-Component .in-focus-gride tbody tr{
+    background-color: #F7F7F7;    
+    font-size: 12px;
+}
+
+.grid-Component .in-focus-gride tbody .first-row {
+  border: none;
+  height: 4px;
+  background: #FFF;
+}
+
+.grid-Component .in-focus-gride tbody tr.border-add {
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid #FFF; 
+}
+
+.grid-Component .in-focus-gride tbody tr td {
+    text-align: center;   
+}
+
+.grid-Component .in-focus-gride tbody tr td span {
+    /*position: relative;
+    bottom: 15px;
+    padding: 0px 5px;*/   
+}
+
+.grid-Component .in-focus-gride thead th span {
+    padding: 0px 5px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #333333;
+}
+
+.grid-Component .in-focus-gride .edit-row{
+    width: 6%;
+}
+
+.grid-Component .in-focus-gride .actions{
+   width: 5%;
+}
+
+.grid-Component .in-focus-gride .priority {
+    width: 6.5%;
+}
+
+.grid-Component .in-focus-gride .goal-type { 
+    width: 7.5%;
+    text-align: left; 
+}
+
+.grid-Component .in-focus-gride .goal {
+    width: 34%;
+    text-align: left;
+}
+
+.grid-Component .in-focus-gride td.goal {
+    padding:0px 8px;   
+}
+
+.grid-Component .in-focus-gride td.goal span {
+    width: 95%;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.grid-Component .in-focus-gride .target-date {
+   width: 8%;
+   text-align: left;
+}
+
+.grid-Component .in-focus-gride td.target-date span {
+     padding-left: 10px;
+}
+
+.grid-Component .in-focus-gride .open-actions {
+    width: 7%;
+    position: relative;
+}
+
+.grid-Component .in-focus-gride .barriers{
+  width: 5%;
+}
+
+.grid-Component .in-focus-gride .progress {
+   width: 10%;  
+}
+
+.grid-Component .in-focus-gride .progress-over-time {
+    width: 11%;
+    padding: 0px 5px;
+    text-align: left;
+}
+
+.grid-Component .in-focus-gride .progress-over-time img{
+    width: 100%;
+    max-width: 150px;
+}
+
+.grid-Component .in-focus-gride .dot-icon{
+    width: 20px;
+    height: 40px;
+    background: #FFF url('../images/dot-iocn.png') no-repeat top left;
+    border-left: 1px solid rgba(169, 119, 119, 0.25);
+    position: relative;   
+    background-position: 0px 5px;
+}
+
+.grid-Component .in-focus-gride .arrow-icon {
+    width: 40px;
+    height: 40px;
+    background: url('../images/arrow-icon.png') no-repeat top left;
+    background-position: 15px 12px;  
+    cursor: pointer;
+}
+
+.grid-Component .in-focus-gride .arrow-icon-down {
+    width: 40px;
+    height: 40px;
+    background: url('../images/down-arrow-icon.png') no-repeat top left;
+    background-position: 15px 10px;   
+     cursor: pointer;
+}
+
+.grid-Component .in-focus-gride .edit-btn {
+    color: #015BA7;
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+.grid-Component .in-focus-gride   .flag-img {
+    position: relative;     
+}
+
+.grid-Component .in-focus-gride   .patient-img {
+    position: relative;
+    left: 5px;
+}
+
+.grid-Component .in-focus-gride .img-span-txt {
+    bottom: 4px;
+    position: relative;
+    left: 5px;
+}
+
+.grid-Component .in-focus-gride  .inner-table {
+    width: 100%;   
+}
+
+.grid-Component .in-focus-gride  .inner-table tr td {
+    vertical-align: middle;    
+}
+
+.grid-Component  .all-data-show {
+    display: none;
+}
+
+.grid-Component .inner-table .all-data-show .left-col{
+    width: 18%;  
+    float: left; 
+    height: 100px;
+}
+
+.grid-Component .inner-table .all-data-show .right-col{    
+    float: left;
+    text-align: left;
+    margin: 20px 0px;
+	width: 76%;
+}
+
+.grid-Component .inner-table .all-data-show span{
+  padding: 0px;   
+}
+
+.grid-Component .inner-table .description-txt{
+    width: 50%;  
+    margin-bottom:5px;
+    color: #333333;
+    min-width: 500px;
+}
+
+.grid-Component .inner-table .description-txt span{
+    position: relative;
+    padding-right: 10px;
+}
+
+
+.grid-Component .inner-table .view-progress-history-link{
+    float: right;
+    color: #015BA7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.grid-Component .inner-table .all-data-show .problem-list{
+    margin:25px 0px;
+}
+
+.grid-Component .inner-table .btnProblems{
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    padding: 2px 4px !important;
+    background-color: #F3F3F3;
+    margin: 2px;  
+    top: 0px;
+	display: inline-block;
+}
+
+.grid-Component .inner-table .btnProblems img{
+    width: 8px;
+}
+
+.grid-Component .inner-table .pat-ac-table{
+    width: 85%;
+}
+
+.grid-Component .inner-table .pat-ac-table .header-ta td{       
+    border: 1px solid #ccc;   
+}
+
+.grid-Component .inner-table .pat-ac-table tr{
+     font-size: 11px;
+     line-height: 20px;
+     text-align: left;
+}
+
+.grid-Component .inner-table .pat-ac-table  td{ 
+    text-align: left; 
+    padding-left: 5px;    
+    padding-top: 2px;
+}
+
+.grid-Component .inner-table .action-des{
+   width: 60% !important;
+}
+
+.grid-Component .inner-table .title-wrapper{
+  margin: 40px 0px 5px;
+}
+}
+
+.title-head.count {
+    color: #C36121;
+    margin-right: 10px;
+}
+
+.grid-Component .inner-table .all-data-show .edit-img{
+    text-align: right !important; 
+    padding: 2px 5px;     
+}
+
+.grid-Component .inner-table .edit-data{
+    display: none;
+}
+
+.grid-Component .inner-table .edit-data .problem-list span{
+    padding: 0px;
+}
+
+.grid-Component .inner-table .edit-data .left-col{
+    width: 18%;  
+    float: left; 
+    height: 100px;
+}
+
+.grid-Component .inner-table .edit-data .right-col{
+    float: left;
+    text-align: left;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.grid-Component .in-focus-gride  .edit-header {
+    position: relative;  
+    top: -33px; 
+    width: 100%;
+}
+
+.grid-Component .in-focus-gride .edit-header .dot-icon, .grid-Component .in-focus-gride .edit-header .arrow-icon-down {
+    position: relative;
+    top: -10px;  
+}
+
+.grid-Component .in-focus-gride  .edit-header tr td{
+    vertical-align: top;
+}
+
+.grid-Component .in-focus-gride  .edit-header .edit-col .edit-disable-btn, .grid-Component .in-focus-gride  .edit-header .edit-col .priority-txt-edit {    
+        top: 6px;
+        left: 0px;
+        position: relative;
+}
+
+.grid-Component .inner-table .edit-data .problem-list .title-head{
+   height: 35px;
+}
+
+.grid-Component .in-focus-gride  .edit-header .edit-col-3 .img-span-txt{
+    top: 8px;     
+}
+
+.grid-Component .in-focus-gride  .edit-data .select-box-edit{
+    height: 25px;
+    margin-left: 7px;
+}
+
+.grid-Component .in-focus-gride  .edit-data .goal-edit{
+    height: 20px;  
+    width: 99%;   
+}
+
+.grid-Component .in-focus-gride  .edit-data .date-edit{
+    height: 18px;
+    width: 70%;
+    margin-left: 7px;
+}
+
+.grid-Component .in-focus-gride  .edit-data .per-edit{
+     height: 18px; 
+}
+
+.grid-Component .in-focus-gride  .edit-data .slider-component{
+		width:110px;
+        margin: auto;
+}
+  
+.grid-Component .in-focus-gride  .edit-data .empty-td{
+    width: 130px;
+}
+
+
+.grid-Component .in-focus-gride  .edit-data .slider-component .slider.ui-slider .ui-slider-handle {
+		width: 8px;
+		height: 16px;
+		margin-left: -4px;
+		top: -9px;
+		background: #F7F7F7;
+		border: 1px solid #000;
+		border-radius: 0px;
+        position: absolute;
+}
+
+.grid-Component .in-focus-gride .edit-data .slider-component .slider {
+	  height: 0px;
+	  border: 1px solid #000;	  
+	  background:#000;
+	  position:relative;
+	  margin: 13px 0px;
+}
+	
+.grid-Component .in-focus-gride  .edit-data .slider-component .slider .ticks{
+		height: 14px;
+		width: 1px;
+		background: #000;
+		position: absolute;
+		top: -7px;
+}
+	
+.grid-Component .in-focus-gride .edit-data .slider-component span{
+	font-size: 10px;
+}
+
+.grid-Component .in-focus-gride .edit-data .edit-description-txtBox{
+    margin-bottom: 2px;
+    width: 50%
+}
+
+.grid-Component .in-focus-gride .edit-data .edit-description-txtBox textarea{
+    width: 100%;
+}
+
+.grid-Component .in-focus-gride .edit-data .set-margine-prob-text{
+    margin: 40px 0px 5px;    
+}
+
+.grid-Component .inner-table .edit-data .problems-btngroup{
+    border: 1px solid #CCC;
+    height: 12px;
+    background: #FFF;
+    padding: 7px 0px;
+    margin-bottom: 40px;
+    width: 525px;
+}
+
+.note-img-span {
+    padding-right: 20px !important;
+}
+
+.annnoteimage {
+    position: absolute;
+    right:2px;
+    top: 2px;
+    font-size: 0px;
+    width: 16px;
+    height: 12px;
+    cursor: help;
+    background-image: url(../images/note-icon.gif);
+    background-repeat: no-repeat;
+}
+
+.btn-with-img {
+    height: 32px;
+    padding-left: 36px;
+    border: 1px solid #ccc;
+    background: transparent url(../images/save-icon.png) no-repeat 10px center;
+    cursor: pointer;
+    margin: 30px 3px;
+}
+
+.btn-noraml {
+    height: 32px;
+    border: 1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    margin: 30px 3px;
+    color: #333333;
+    padding: 0px 10px;
+}
+
+
+.plan-of-care-container .draft-summary {
+       font-size: 11px;
+}
+
+.plan-of-care-container .draft-summary .draft-data{
+    width: 98.5%;
+    min-height: 20px;
+    max-height: 62px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 5px 0px 30px 0px;
+}
+
+.finalized-plan-header{
+    width: 99.5%; 
+    margin-bottom: 30px;
+}
+
+/*=== comman-popup start==*/
+.comman-popup {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 603px;  
+    background: rgba(0,0,0,0.5);
+    right: 0px;
+    margin: auto;
+    z-index: 9999;   
+    /*display: none;*/
+}
+
+.comman-popup .wrapper-container {
+    background: #FFF;
+    margin: 10px;
+    padding-bottom: 25px;
+}
+
+.comman-popup .wrapper-container .popup-heder{
+    border-bottom: 1px solid #ccc;    
+    padding: 10px;
+}
+
+.comman-popup .wrapper-container .popup-heder .title {
+    font-weight: 700;
+    font-size: 16px;   
+}
+
+.comman-popup .wrapper-container .popup-heder .close-img img{
+    width: 12px;
+    cursor: pointer;
+}
+
+.comman-popup .wrapper-container .popup-container{
+    margin: 0px 15px;  
+    font-size: 12px;   
+}
+
+.comman-popup .wrapper-container .sub-heder {
+   padding: 10px 0px; 
+}
+
+/*=== comman-popup end==*/
+/*===new-goal-popup start==*/
+.new-goal-popup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -320px;
+}
+
+.new-goal-popup .wrapper-container .search-box .text-area{
+    position: relative;
+}
+
+.new-goal-popup .wrapper-container .search-box .clear-txt{
+    position: absolute;
+    right: 5px;
+    top: -2px;
+    width: 12px;
+}
+
+.new-goal-popup .wrapper-container .search-box img{
+    padding: 4px 0px;
+}
+
+.new-goal-popup .popup-container .popup-goal-table{
+    width: 100%; 
+    margin: 10px 0px
+}
+
+.new-goal-popup .popup-container .popup-goal-table tbody tr{
+    border-bottom: 1px solid #ccc;
+    background: #FFF;
+    width: 540px;
+}
+
+.new-goal-popup .popup-container .popup-goal-table td:first-child{
+    width: 110px;
+}
+
+.new-goal-popup .popup-container .btn-close{
+    margin: 0px;
+    padding: 0px 10px;   
+}
+
+.finalized-plan-header tr td{
+     height: 40px;
+    padding: 10px 5px !important;
+}
+
+.finalized-plan-header .audience-span{
+    position: relative;
+    top: -7px;
+}
+
+.finalized-plan-header .summary-th{
+    width: 60%;   
+}
+
+.finalized-plan-header tbody tr:nth-child(even) {
+    background: #F3F3F3;
+}
+/*===new-goal-popup end==*/
+
+
+/*===Finalize Plan of Care popup start==*/
+.finalize-popup{
+    width: 900px;  
+    height: 600px;
+    display: none;   
+}
+
+.finalize-popup .wrapper-container{
+    height: 555px;
+    overflow: auto;
+}
+
+.finalize-popup .popup-container{
+    height: 485px;
+    position: relative;
+}
+
+.finalize-popup input[type="radio"]{
+    position: relative;
+    top: -3px;
+}
+
+.finalize-popup .btn-group{
+   text-align: right;
+   clear: both;
+    margin-right: 15px;
+}
+
+.finalize-popup .btn-group .btn-noraml{
+    margin: 0px 3px;
+}
+
+.finalize-popup .popup-container .patient, .finalize-popup .popup-container .careteam {
+    float: left;
+    width: 50%;
+    min-height: 400px;
+}
+
+.share-btn{
+  height: 32px;
+    padding-left: 36px;
+    border: 1px solid #ccc;
+    background: transparent url(../images/share-icon.png) no-repeat 10px center;
+    cursor: pointer;
+    margin: 30px 3px;  
+}
+
+.finalize-popup .title-head{
+    margin-bottom:0px;
+}
+
+.finalize-popup #generatePlan{
+    display: none;
+}
+
+
+
+/*=== accordion  start */
+
+.acc-plan-care {
+   min-height: 330px;
+}
+
+.acc-plan-care h3{			
+     padding:5px 25px;
+     cursor:pointer;			
+}
+
+.ui-accordion-icons {
+      background: url('../images/arrow-icon.png') no-repeat top left;
+     background-position: 0px 2px;
+}
+
+.accordion-header-active {
+     background: url('../images/down-arrow-icon.png') no-repeat top left;
+     background-position: 2px -1px;
+}
+
+.ui-accordion-content{
+    padding:5px 30px;
+}
+
+/*=== accordion  end */
+
+
+
+/*===Finalize Plan of Care popup end==*/
+
+
+/*===table theme start==*/
+
+.table-header-bg{
+  background-color:#F3F3F3 !important;  
+}
+
+.table-theme tr th{
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 7px 0px;   
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.table-theme  tr td{
+    font-size: 12px;  
+    vertical-align: top;
+    padding: 5px 7px;
+}
+
+.grid-Component .inner-table .title-head, .title-head{
+  font-weight: 600;   
+  margin-bottom: 10px; 
+  padding:0px !important;   
+}
+
+.table-theme .image-icon-c {
+    position: relative;
+    top: -3px;
+}
+
+.table-theme .list{
+    padding: 10px 0px;
+}
+
+.table-theme .count{
+    color: #C36121;
+    margin-right: 5px;
+}
+/*===table theme end==*/
+
+
+/*===== poc style=========== */
+.poc-mian-container {
+    width: 100%;    
+    max-width: 900px;
+    margin: 10px 20px; 
+    font-size: 12px;
+    color: #333333;
+}
+
+.poc-mian-container .poc-header h1{
+    font-size: 22px;
+}
+
+.poc-mian-container h4{
+    margin: 20px 0px;
+}
+
+.poc-mian-container .poc-header .poc-details{
+    margin: 20px 0px;
+}
+
+.poc-mian-container .poc-header .poc-logo{
+    margin: 0px 20px;
+}
+
+.poc-heading{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.poc-p{
+    margin: 15px 100px 15px 0px;
+    word-wrap: break-word;
+}
+
+.table-Full-width{
+   width: 98%; 
+}
+
+.poc-mian-container .poc-table-goal .goal-th{
+    width: 75%;
+}
+
+.poc-mian-container .poc-table-goal .status-th{
+    min-width:120px;
+}
+
+.poc-mian-container .poc-table-goal .tar-date-th{
+    min-width:120px; 
+}
+
+.poc-mian-container .poc-table-goal .edit-th{
+    min-width:70px
+}
+
+.poc-mian-container .poc-table-goal .table-para{
+    width: 480px;
+    margin-bottom:25px;
+}
+
+.poc-mian-container  .title-head{
+    margin-bottom: 5px;
+}
+
+.poc-mian-container .add-padding-td{
+    padding: 20px 7px;   
+}
+
+.poc-mian-container .poc-table-goal .title-wrapper{
+    margin: 25px 0px 5px 0px;
+}
+
+.poc-mian-container ul{
+    width: 600px;   
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding: 2px 2px;  
+    background-color: #F3F3F3;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+     font-size: 12px;    
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+   float: right;
+    font-size: 14px;    
+    margin-left: 5px;
+    padding: 0px !important;
+}
+
+select2 select2-container select2-container--default select2-container--focus select2-container--below select2-container--open{
+    position: relative;
+    top: -50px;
+}
+
+.select2-container{
+    font-size: 12px;
+}
+.select2-container--default .select2-selection--multiple{
+    border-radius: 0px;  
+    border: solid #ccc 1px;
+}
+
+ul.open-action-tool-tip {
+    position: absolute;
+    background: #FFF;   
+    border: 1px solid #ccc;
+    top: 0px;
+    left:90%;
+    z-index: 9;
+    display: none;
+    width: 190px;
+    text-align:left;
+    font-size: 11px;
+    color: #333333;   
+}
+
+ul.open-action-tool-tip li{
+     padding: 2px;
+}
+
+ul.open-action-tool-tip li:hover{
+    background: #F47B29;  
+    color: #FFF;    
+}
+
+@media (max-width: 1279px) {
+    .grid-Component .in-focus-gride .goal{
+        width:15%   
+    }
+    
+    .grid-Component .inner-table .edit-data .left-col, .grid-Component .inner-table .all-data-show .left-col{
+        width: 22%;   
+    }
+    
+    .grid-Component .inner-table .edit-data .right-col{
+        width:77%;
+    }
+    
+    .grid-Component .in-focus-gride .edit-data .slider-component{
+        width: 95%;   
+    }
+    
+    .grid-Component .in-focus-gride .edit-data .select-box-edit{
+       width: 70px;
+    }
+    
+}
 
 
 
